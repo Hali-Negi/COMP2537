@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakery & Cooking</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            color: <%= color %>;
+            background-color: <%= bg %>;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2><b>Welcome to Natasha's Bakery & Cooking Website!</b></h2>
+
+    <!-- <img src="/images/bakery.jpeg" alt="Bakery Ingredients" width="700" style="border-radius: 15px; margin: 20px auto; display: block;"> -->
+
+    <h3><i>Session Counter: <%= counter %></i></h3>
+<div>
+    <button onclick="location.href='/up'">Up</button>
+    <button onclick="location.href='/down'">Down</button>
+</div>
+    <br><br> <br><br>
+    <h3><i>Change Your Page Style</i></h3>
+
+    <form action="/changeStyle" method="GET">
+        <label>Text Color: <input type="text" name="color" placeholder="e.g., red"></label><br>
+        <label>Background Color: <input type="text" name="bg" placeholder="e.g., pink"></label><br>
+        <button type="submit">Change Style</button>
+    </form>
+</body>
+</html>
+
+

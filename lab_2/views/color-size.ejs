@@ -1,0 +1,12 @@
+
+  <%- include('partials/header') %>
+  <div class="container">
+    <h1><%= color.charAt(0).toUpperCase() + color.slice(1) %> Pages</h1>
+    <p>Font <%= size %> px</p>
+    <button id="myButton">Click to make me <%= color.charAt(0).toUpperCase() + color.slice(1) %>!</button>
+  </div>
+  <%- include('partials/footer') %>
+  <% jsFiles.forEach(file => { %>
+    <script src="<%= file %>"></script>
+  <% }) %>
+

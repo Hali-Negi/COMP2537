@@ -1,0 +1,24 @@
+.color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    min-height: 300px;
+  }
+  
+  .color-box {
+    width: 150px;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  
